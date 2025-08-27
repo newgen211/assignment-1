@@ -7,7 +7,7 @@ export default (req: Request, res: Response): void => {
   const n = parseInt(num, 10);
 
   if (isNaN(n) || n < 0) {
-    res.status(400).send(`Invalid input: ${num}. Must be a non-negative integer.`);
+    res.status(400).send(`fibonacci(${n}) is undefined`);
     return;
   }
 
